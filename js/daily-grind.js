@@ -37,7 +37,7 @@ switch (myDay) {
         coffee = {
             pic: "images/cold-brew.jpg",
             alt: "A picture of a cold brew coffee",
-            desc: `I like me some cold brew`,
+            desc: `Cold brew is simply coffee that has been brewed with cold rather than hot water and usually involves a long steeping process—anywhere between 12-24 hours. In terms of flavor, cold brew is generally characterized as smooth, low-acid, and heavier than its hot brewed counterparts`,
             day: `Sunday`,
             color: `#3D2B1F`,
             feature: `#3D2B1F`,
@@ -49,7 +49,7 @@ switch (myDay) {
         coffee = {
             pic: "images/pumpkin-spice-latte.jpg",
             alt: "A picture of a pumpkin spice latte",
-            desc: `It's pumpkin spice season, come grab yours`,
+            desc: `The Pumpkin Spice Latte is a coffee drink made with a mix of traditional fall spice flavors (cinnamon, nutmeg, and clove), steamed milk, espresso, and often sugar, topped with whipped cream and pumpkin pie spice's`,
             day: `Monday`,
             color: `#CC8833`,
             feature: `##CC8833`,
@@ -61,7 +61,7 @@ switch (myDay) {
         coffee = {
             pic: "images/bubble-tea.jpg",
             alt: "A picture of bubble tea",
-            desc: `I like me some bubble tea`,
+            desc: `Bubble tea is a cold, flavored tea beverage that contains large chewy tapioca balls, making it an interactive drink and a sweet snack`,
             day: `Tuesday`,
             color: `#EFDECD`,
             feature: `#EFDECD`,
@@ -73,7 +73,7 @@ switch (myDay) {
         coffee = {
             pic: "images/drip.jpg",
             alt: "A picture of drip coffee",
-            desc: `Our drip coffee is the best in town`,
+            desc: `Drip coffee is made by pouring boiling water over ground coffee (the grind of which being much coarser than espresso). A filter that is typically made from paper separates the grounds from the brewed liquid which allows the water to pass through and fall into a pot or jug`,
             day: `Wednesday`,
             color: `#4B3621`,
             feature: `#4B3621`,
@@ -85,7 +85,7 @@ switch (myDay) {
         coffee = {
             pic: "images/caramel-latte.jpg",
             alt: "A picture of a caramel latte",
-            desc: `Not too sweet, but sweet enough`,
+            desc: `This drink is sweetened with caramel syrup. Once the syrup is added, you simply need to add your shots, pour steamed milk and milk foam on top. This helps create a pleasant coffee-caramel taste throughout the drink`,
             day: `Thursday`,
             color: `#C5A582`,
             feature: `#C5A582`,
@@ -97,7 +97,7 @@ switch (myDay) {
         coffee = {
             pic: "images/frappaccino.jpg",
             alt: "A picture of frappiccino",
-            desc: `Pretty good frappiccino`,
+            desc: `A Frappuccino is a blended coffee drink that is typically made with coffee or espresso, milk, and ice. It is blended together in a blender, which gives it a smooth and creamy texture. Additional ingredients such as syrups and whipped cream can also be added to customize the flavor`,
             day: `Friday`,
             color: `#F6D7B0`,
             feature: `#F6D7B0`,
@@ -109,7 +109,7 @@ switch (myDay) {
         coffee = {
             pic: "images/mocha.jpg",
             alt: "A picture of a mocha coffee",
-            desc: `Mocha is choclate and coffee`,
+            desc: `A cafe mocha is essentially a chocolate flavored variant of a cafe latte, or even a hot chocolate with shots of espresso in it. It is made up of espresso, milk, and chocolate. It can include one or two shots of espresso depending on taste preferences and traditionally is topped with milk foam, just like a latte`,
             day: `Saturday`,
             color: `#9E5B40`,
             feature: `#9E5B40`,
