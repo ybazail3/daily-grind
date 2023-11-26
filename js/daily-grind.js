@@ -1,22 +1,3 @@
-// alert("Can you see this?");
-
-/*TODO:
-Rotate by Day of Week: Use HTML/CSS & JavaScript to create a single page 
-that rotates unique colors and content for each weekday (Sunday to Saturday) into the page.  
-The content must include:
-
-- One unique image, with appropriate and matching content in the alt tag.  
-- A paragraph or two of content that describes the daily item (paragraph must include the 
-    name of the highlighted weekday)
--  unique color that supports the image and paragraph of content
-
-pic - image src
-alt - an alt tag for the image
-desc - description of item
-day - The highlighted day of the week
-color - color to match pic
-name - name of coffee
-*/
 
 function coffeeTemplate(coffee) {
     return `
@@ -30,6 +11,7 @@ let myDate = new Date();
 let myDay = myDate.getDay();
 let today = "";
 let coffee = "";
+let feature = "";
 // console.log(myDay);
 
 //use location object to access querystring (address bar)
@@ -57,7 +39,8 @@ switch (myDay) {
             alt: "A picture of a cold brew coffee",
             desc: `I like me some cold brew`,
             day: `Sunday`,
-            color: `brown`,
+            color: `#3D2B1F`,
+            feature: `#3D2B1F`,
             name: `Cold Brew`,
         };
         break;
@@ -68,7 +51,8 @@ switch (myDay) {
             alt: "A picture of a pumpkin spice latte",
             desc: `It's pumpkin spice season, come grab yours`,
             day: `Monday`,
-            color: `orange`,
+            color: `#CC8833`,
+            feature: `##CC8833`,
             name: `Pumpkin Spice Latte`,
         };
         break;
@@ -79,7 +63,8 @@ switch (myDay) {
             alt: "A picture of bubble tea",
             desc: `I like me some bubble tea`,
             day: `Tuesday`,
-            color: `beige`,
+            color: `#EFDECD`,
+            feature: `#EFDECD`,
             name: `Bubble Tea`,
         };
         break;
@@ -90,7 +75,8 @@ switch (myDay) {
             alt: "A picture of drip coffee",
             desc: `Our drip coffee is the best in town`,
             day: `Wednesday`,
-            color: `brown`,
+            color: `#4B3621`,
+            feature: `#4B3621`,
             name: `Drip`,
         };
         break;
@@ -101,7 +87,8 @@ switch (myDay) {
             alt: "A picture of a caramel latte",
             desc: `Not too sweet, but sweet enough`,
             day: `Thursday`,
-            color: `caramel`,
+            color: `#C5A582`,
+            feature: `#C5A582`,
             name: `Caramel Latte`,
         };
         break;
@@ -112,7 +99,8 @@ switch (myDay) {
             alt: "A picture of frappiccino",
             desc: `Pretty good frappiccino`,
             day: `Friday`,
-            color: `dark brown`,
+            color: `#F6D7B0`,
+            feature: `#F6D7B0`,
             name: `Frappaccino`,
         };
         break;
@@ -123,7 +111,8 @@ switch (myDay) {
             alt: "A picture of a mocha coffee",
             desc: `Mocha is choclate and coffee`,
             day: `Saturday`,
-            color: `beige`,
+            color: `#9E5B40`,
+            feature: `#9E5B40`,
             name: `Mocha`,
         };
         break;
@@ -134,6 +123,16 @@ switch (myDay) {
 // inject coffee data into page
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 document.querySelector("html").style.backgroundColor = coffee.color;
+
+/*
+Original code: document.getElementsByClassName("feature").style.color = coffee.feature;
+This didnt work because because getElementsByClassName doesn't return a single element. We 
+will have to loop through each element.
+*/
+document.querySelectorAll(".feature").forEach(element => {
+    element.style.color = coffee.feature;
+});
+
 
 // let coffeeData = coffeeTemplate(coffee);
 
